@@ -6,7 +6,7 @@ const largest = arr.reduce((max, curr) => {
   } else {
     return max;
   }
-}, arr[i]);
+}, arr[0]);
 
 console.log(largest);
 const sum = arr.reduce((acc, curr) => {
