@@ -1,27 +1,27 @@
-let str = 'abcdea';
-let c = 0;
+// let str = 'abcdea';
+// let c = 0;
 
-//1.with every method
-function uniqueStr(str) {
-  const result = str
-    .split('')
-    .every((ele, index) => str.indexOf(ele) === index);
-  return result;
-}
+// //1.with every method
+// function uniqueStr(str) {
+//   const result = str
+//     .split('')
+//     .every((ele, index) => str.indexOf(ele) === index);
+//   return result;
+// }
 
-console.log(uniqueStr(str));
+// console.log(uniqueStr(str));
 
-//with for loop
-function unique(str) {
-  for (i = 0; i < str.length; i++) {
-    if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
-      return false;
-    }
-  }
-  return true;
-}
+// //with for loop
+// function unique(str) {
+//   for (i = 0; i < str.length; i++) {
+//     if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-console.log(unique(str));
+// console.log(unique(str));
 
 //2.array sum
 const arr = [1, 2, 4, 34, 22];
